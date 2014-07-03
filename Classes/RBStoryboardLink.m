@@ -197,22 +197,22 @@
     [self.view addSubview:scene.view];
     [self.scene didMoveToParentViewController:self];
 
-    scene.view.translatesAutoresizingMaskIntoConstraints = NO;
-
-    NSDictionary * views = @{
-                             @"topGuide"    : self.topLayoutGuide,
-                             @"bottomGuide" : self.bottomLayoutGuide,
-                             @"view"        : scene.view,
-                             };
-
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view]|"
-                                                                      options:0
-                                                                      metrics:nil
-                                                                        views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:[self vertialConstraintString]
-                                                                      options:0
-                                                                      metrics:nil
-                                                                        views:views]];
+//    scene.view.translatesAutoresizingMaskIntoConstraints = NO;
+//
+//    NSDictionary * views = @{
+//                             @"topGuide"    : self.topLayoutGuide,
+//                             @"bottomGuide" : self.bottomLayoutGuide,
+//                             @"view"        : scene.view,
+//                             };
+//
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view]|"
+//                                                                      options:0
+//                                                                      metrics:nil
+//                                                                        views:views]];
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:[self vertialConstraintString]
+//                                                                      options:0
+//                                                                      metrics:nil
+//                                                                        views:views]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
